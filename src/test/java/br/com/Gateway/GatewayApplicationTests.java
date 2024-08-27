@@ -1,4 +1,4 @@
-package br.com.veloxium.Gateway;
+package br.com.Gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
