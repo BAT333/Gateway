@@ -1,15 +1,19 @@
-package br.com.Gateway;
+package br.com.Gateway.config;
 
 
-import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 
 @Configuration
 public class GatewayConfig {
+    private final List<Routes> routes = List.of(new Routes("employee_service","/api/employee/**","8083"));
+
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
@@ -101,6 +105,12 @@ public class GatewayConfig {
 
 
                 .build();
+    }
+
+
+    @Bean
+    public RestTemplate template(){
+        return new RestTemplate();
     }
 
 }
