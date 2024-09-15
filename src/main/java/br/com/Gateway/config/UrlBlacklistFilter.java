@@ -19,10 +19,12 @@ public class UrlBlacklistFilter implements GlobalFilter {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String requestPath = exchange.getRequest().getPath().value();
         System.out.println(requestPath);
-        for (String path:blockedUrls) {
-            if (requestPath.startsWith(path)) {
-                exchange.getResponse().setStatusCode(HttpStatus.FORBIDDEN);
-                return exchange.getResponse().setComplete();
+        if (!requestPath.contains("/v3/api-docs")) {
+            for (String path:blockedUrls) {
+                if (requestPath.startsWith(path)) {
+                    exchange.getResponse().setStatusCode(HttpStatus.FORBIDDEN);
+                    return exchange.getResponse().setComplete();
+                }
             }
         }
 
