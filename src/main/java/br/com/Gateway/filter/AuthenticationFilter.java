@@ -3,50 +3,56 @@ package br.com.Gateway.filter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
-
+import reactor.core.publisher.Mono;
 
 @Component
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
+
     @Autowired
     private RouteValidator valid;
-    //    @Autowired
-//    private RestTemplate template;
+
+    @Autowired
+    @Lazy
+    private AuthService authService;
+
     public AuthenticationFilter() {
         super(Config.class);
     }
 
     @Override
     public GatewayFilter apply(AuthenticationFilter.Config config) {
-        return ((exchange, chain) -> {
-            //Rotas que eu quero que seja liberadas
-            if(valid.isSecured.test(exchange.getRequest())){
-                //header contains token or not
+        return (exchange, chain) -> {
+            if (valid.isSecured.test(exchange.getRequest())) {
+                // Verifica se o cabeçalho de autorização está presente
                 if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
-                    throw new RuntimeException("missing authorization header");
+                    return Mono.error(new RuntimeException("Missing authorization header"));
                 }
 
-
+                // Obtém o token do cabeçalho de autorização
                 String authHeader = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
                 if (authHeader != null && authHeader.startsWith("Bearer ")) {
-                    authHeader = authHeader.substring(7);
+                    authHeader = authHeader.substring(7).replace("Bearer ", "");
+                } else {
+                    return Mono.error(new RuntimeException("Invalid authorization header format"));
                 }
-                try {
-                    //REST call to AUTH service
-                    //parte de Auth vai ser sincrona e com aplicação rodando em renge de ip especifico
-//                    template.getForObject("http://IDENTITY-SERVICE//validate?token" + authHeader, String.class);
-                    //jwtUtil.validateToken(authHeader);
-                    System.out.println("PASSOU POR AQUI");
-                } catch (Exception e) {
-                    System.out.println("invalid access...!");
-                    throw new RuntimeException("un authorized access to application");
-                }
-            }
-            return chain.filter(exchange);
-        });
-    }
-    public static class Config {
 
+                // Executa a autenticação de forma reativa
+                return authService.authenticate(authHeader)
+                        .then(chain.filter(exchange))  // Continua o fluxo reativo se a autenticação for bem-sucedida
+                        .onErrorResume(e -> {
+                            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+                            return exchange.getResponse().setComplete();
+                        });
+            }
+
+            return chain.filter(exchange);
+        };
+    }
+
+    public static class Config {
     }
 }

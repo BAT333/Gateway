@@ -1,11 +1,13 @@
 package br.com.Gateway.config;
 
 
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.List;
 
@@ -104,13 +106,28 @@ public class GatewayConfig {
                         .uri("http://localhost:8089")) //Route to Swagger UI
 
 
+                .route("sale_service", r -> r
+                        .path("/api/sale/**")
+                        .uri("http://localhost:8090"))//Microservice running on port 8090
+                .route("sale_service_swagger", r -> r
+                        .path("/aggregate/sale-service/v3/api-docs")
+                        .filters(f -> f.rewritePath("/aggregate/sale-service/(?<segment>.*)", "/${segment}"))
+                        .uri("http://localhost:8090")) //Route to Swagger JSON
+                .route("swagger_ui", r -> r
+                        .path("/swagger-ui/**")
+                        .filters(f -> f.rewritePath("/swagger-ui/(?<segment>.*)", "/${segment}"))
+                        .uri("http://localhost:8090")) //Route to Swagger UI
                 .build();
     }
 
+    @Bean
+    public WebClient.Builder webClientBuilder() {
+        return WebClient.builder();
+    }
 
     @Bean
-    public RestTemplate template(){
-        return new RestTemplate();
+    public GlobalFilter urlBlacklistF() {
+        return new UrlBlacklistFilter();
     }
 
 }
