@@ -12,7 +12,7 @@ import java.util.List;
 @Component
 public class UrlBlacklistFilter implements GlobalFilter {
 
-    private final List<String> blockedUrls = List.of("/sales", "/employee", "/client",
+    private final List<String> blockedUrls = List.of("/employee", "/client",
             "/search", "/whatsApp", "/email", "/property","/","");
 
     @Override

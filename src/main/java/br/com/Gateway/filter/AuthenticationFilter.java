@@ -27,12 +27,12 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
     public GatewayFilter apply(AuthenticationFilter.Config config) {
         return (exchange, chain) -> {
             if (valid.isSecured.test(exchange.getRequest())) {
-                // Verifica se o cabeçalho de autorização está presente
+                // Checks if the Authorization header is present
                 if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
                     return Mono.error(new RuntimeException("Missing authorization header"));
                 }
 
-                // Obtém o token do cabeçalho de autorização
+                // Gets the token from the authorization header
                 String authHeader = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
                 if (authHeader != null && authHeader.startsWith("Bearer ")) {
                     authHeader = authHeader.substring(7).replace("Bearer ", "");
@@ -40,9 +40,10 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                     return Mono.error(new RuntimeException("Invalid authorization header format"));
                 }
 
-                // Executa a autenticação de forma reativa
+                //
+                //Perform authentication reactively
                 return authService.authenticate(authHeader)
-                        .then(chain.filter(exchange))  // Continua o fluxo reativo se a autenticação for bem-sucedida
+                        .then(chain.filter(exchange))  // Continue reactive flow if authentication is successful
                         .onErrorResume(e -> {
                             exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
                             return exchange.getResponse().setComplete();
