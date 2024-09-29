@@ -1,0 +1,433 @@
+2024-09-29 00:54:16 - Starting GatewayApplication using Java 21 with PID 9184 (C:\Users\rafae\real-estate-management-system\gateway\target\classes started by rafae in C:\Users\rafae\real-estate-management-system\gateway)
+2024-09-29 00:54:16 - No active profile set, falling back to 1 default profile: "default"
+2024-09-29 00:54:23 - BeanFactory id=18a0dae1-5cd5-31f2-8042-7d7395fb8bb2
+2024-09-29 00:54:24 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-29 00:54:24 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 00:54:24 - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-29 00:54:24 - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 00:54:24 - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [After]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Before]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Between]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Cookie]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Header]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Host]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Method]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Path]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Query]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [ReadBody]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [RemoteAddr]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [Weight]
+2024-09-29 00:54:31 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-09-29 00:54:34 - Eureka HTTP Client uses RestTemplate.
+2024-09-29 00:54:35 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-29 00:54:35 - Setting initial instance status as: STARTING
+2024-09-29 00:54:35 - Initializing Eureka in region us-east-1
+2024-09-29 00:54:35 - Resolving eureka endpoints via configuration
+2024-09-29 00:54:35 - Disable delta property : false
+2024-09-29 00:54:35 - Single vip registry refresh property : null
+2024-09-29 00:54:35 - Force full registry fetch : false
+2024-09-29 00:54:35 - Application is null : false
+2024-09-29 00:54:35 - Registered Applications size is zero : true
+2024-09-29 00:54:35 - Application version is -1: true
+2024-09-29 00:54:35 - Getting all instance registry info from the eureka server
+2024-09-29 00:54:37 - The response status is 200
+2024-09-29 00:54:37 - Starting heartbeat executor: renew interval is: 30
+2024-09-29 00:54:37 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-29 00:54:37 - Discovery Client initialized at timestamp 1727582077023 with initial instances count: 0
+2024-09-29 00:54:37 - Registering application GATEWAY with eureka with status UP
+2024-09-29 00:54:37 - Saw local status change event StatusChangeEvent [timestamp=1727582077050, current=UP, previous=STARTING]
+2024-09-29 00:54:37 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082: registering service...
+2024-09-29 00:54:37 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - registration status: 204
+2024-09-29 00:54:37 - Netty started on port 8082 (http)
+2024-09-29 00:54:37 - Updating port to 8082
+2024-09-29 00:54:38 - Started GatewayApplication in 23.395 seconds (process running for 25.002)
+2024-09-29 00:55:07 - Disable delta property : false
+2024-09-29 00:55:07 - Single vip registry refresh property : null
+2024-09-29 00:55:07 - Force full registry fetch : false
+2024-09-29 00:55:07 - Application is null : false
+2024-09-29 00:55:07 - Registered Applications size is zero : true
+2024-09-29 00:55:07 - Application version is -1: false
+2024-09-29 00:55:07 - Getting all instance registry info from the eureka server
+2024-09-29 00:55:07 - The response status is 200
+2024-09-29 00:55:26 - http://172.27.64.1:8082/api/employee/public/register2024-09-29T00:54:26.229773500
+2024-09-29 00:55:26 - Missing authorization header: 2024-09-29T00:54:26.229773500
+2024-09-29 00:55:26 - [f1c800fb-1]  500 Server Error for HTTP GET "/employee-service/api/employee/public/register"
+java.lang.RuntimeException: Missing authorization header
+	at br.com.Gateway.filter.AuthenticationFilter.lambda$apply$1(AuthenticationFilter.java:48)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/employee-service/api/employee/public/register" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at br.com.Gateway.filter.AuthenticationFilter.lambda$apply$1(AuthenticationFilter.java:48)
+		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
+		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:127)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:45)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:136)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.request(MonoFilterWhen.java:183)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onSubscribe(FluxOnErrorResume.java:74)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onSubscribe(MonoFilterWhen.java:100)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:207)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:98)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:44)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.request(FluxDematerialize.java:127)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerComplete(FluxConcatMapNoPrefetch.java:275)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onComplete(FluxConcatMap.java:889)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2231)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:141)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.request(MonoFilterWhen.java:183)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339)
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339)
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55)
+		at reactor.netty.http.server.HttpServer$HttpServerHandle.onStateChange(HttpServer.java:1176)
+		at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:710)
+		at reactor.netty.transport.ServerTransport$ChildObserver.onStateChange(ServerTransport.java:481)
+		at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:652)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:114)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:240)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-29 00:58:16 - Unregistering application GATEWAY with eureka with status DOWN
+2024-09-29 00:58:16 - Saw local status change event StatusChangeEvent [timestamp=1727582296664, current=DOWN, previous=UP]
+2024-09-29 00:58:16 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082: registering service...
+2024-09-29 00:58:16 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - registration status: 204
+2024-09-29 00:58:18 - Shutting down DiscoveryClient ...
+2024-09-29 00:58:21 - Unregistering ...
+2024-09-29 00:58:21 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - deregister  status: 200
+2024-09-29 00:58:21 - Completed shut down of DiscoveryClient
+2024-09-29 00:58:29 - Starting GatewayApplication using Java 21 with PID 10040 (C:\Users\rafae\real-estate-management-system\gateway\target\classes started by rafae in C:\Users\rafae\real-estate-management-system\gateway)
+2024-09-29 00:58:29 - No active profile set, falling back to 1 default profile: "default"
+2024-09-29 00:58:34 - BeanFactory id=18a0dae1-5cd5-31f2-8042-7d7395fb8bb2
+2024-09-29 00:58:34 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-29 00:58:34 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 00:58:34 - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-29 00:58:34 - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 00:58:34 - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [After]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Before]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Between]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Cookie]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Header]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Host]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Method]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Path]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Query]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [ReadBody]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [RemoteAddr]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [Weight]
+2024-09-29 00:58:39 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-09-29 00:58:42 - Eureka HTTP Client uses RestTemplate.
+2024-09-29 00:58:42 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-29 00:58:43 - Setting initial instance status as: STARTING
+2024-09-29 00:58:43 - Initializing Eureka in region us-east-1
+2024-09-29 00:58:43 - Resolving eureka endpoints via configuration
+2024-09-29 00:58:44 - Disable delta property : false
+2024-09-29 00:58:44 - Single vip registry refresh property : null
+2024-09-29 00:58:44 - Force full registry fetch : false
+2024-09-29 00:58:44 - Application is null : false
+2024-09-29 00:58:44 - Registered Applications size is zero : true
+2024-09-29 00:58:44 - Application version is -1: true
+2024-09-29 00:58:44 - Getting all instance registry info from the eureka server
+2024-09-29 00:58:45 - The response status is 200
+2024-09-29 00:58:45 - Starting heartbeat executor: renew interval is: 30
+2024-09-29 00:58:45 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-29 00:58:45 - Discovery Client initialized at timestamp 1727582325384 with initial instances count: 0
+2024-09-29 00:58:45 - Registering application GATEWAY with eureka with status UP
+2024-09-29 00:58:45 - Saw local status change event StatusChangeEvent [timestamp=1727582325415, current=UP, previous=STARTING]
+2024-09-29 00:58:45 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082: registering service...
+2024-09-29 00:58:45 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - registration status: 204
+2024-09-29 00:58:45 - Netty started on port 8082 (http)
+2024-09-29 00:58:45 - Updating port to 8082
+2024-09-29 00:58:46 - Started GatewayApplication in 17.644 seconds (process running for 19.003)
+2024-09-29 00:59:04 - http://172.27.64.1:8082/api/employee/public/register2024-09-29T00:58:35.929129800
+2024-09-29 00:59:04 - Missing authorization header: 2024-09-29T00:58:35.929129800
+2024-09-29 00:59:04 - [0462f5d3-1]  500 Server Error for HTTP GET "/employee-service/api/employee/public/register"
+java.lang.RuntimeException: Missing authorization header
+	at br.com.Gateway.filter.AuthenticationFilter.lambda$apply$1(AuthenticationFilter.java:48)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/employee-service/api/employee/public/register" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at br.com.Gateway.filter.AuthenticationFilter.lambda$apply$1(AuthenticationFilter.java:48)
+		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
+		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:127)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:45)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:136)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.request(MonoFilterWhen.java:183)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onSubscribe(FluxOnErrorResume.java:74)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onSubscribe(MonoFilterWhen.java:100)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:207)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:98)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:44)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.request(FluxDematerialize.java:127)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerComplete(FluxConcatMapNoPrefetch.java:275)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onComplete(FluxConcatMap.java:889)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2231)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:141)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.request(MonoFilterWhen.java:183)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339)
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331)
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339)
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55)
+		at reactor.netty.http.server.HttpServer$HttpServerHandle.onStateChange(HttpServer.java:1176)
+		at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:710)
+		at reactor.netty.transport.ServerTransport$ChildObserver.onStateChange(ServerTransport.java:481)
+		at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:652)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:114)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:240)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-29 00:59:15 - Disable delta property : false
+2024-09-29 00:59:15 - Single vip registry refresh property : null
+2024-09-29 00:59:15 - Force full registry fetch : false
+2024-09-29 00:59:15 - Application is null : false
+2024-09-29 00:59:15 - Registered Applications size is zero : true
+2024-09-29 00:59:15 - Application version is -1: false
+2024-09-29 00:59:15 - Getting all instance registry info from the eureka server
+2024-09-29 00:59:15 - The response status is 200
+2024-09-29 00:59:52 - Unregistering application GATEWAY with eureka with status DOWN
+2024-09-29 00:59:52 - Saw local status change event StatusChangeEvent [timestamp=1727582392168, current=DOWN, previous=UP]
+2024-09-29 00:59:52 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082: registering service...
+2024-09-29 00:59:52 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - registration status: 204
+2024-09-29 00:59:54 - Shutting down DiscoveryClient ...
+2024-09-29 00:59:57 - Unregistering ...
+2024-09-29 00:59:57 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - deregister  status: 200
+2024-09-29 00:59:57 - Completed shut down of DiscoveryClient
+2024-09-29 01:00:02 - Starting GatewayApplication using Java 21 with PID 9132 (C:\Users\rafae\real-estate-management-system\gateway\target\classes started by rafae in C:\Users\rafae\real-estate-management-system\gateway)
+2024-09-29 01:00:02 - No active profile set, falling back to 1 default profile: "default"
+2024-09-29 01:00:08 - BeanFactory id=18a0dae1-5cd5-31f2-8042-7d7395fb8bb2
+2024-09-29 01:00:09 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-29 01:00:09 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 01:00:09 - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-29 01:00:09 - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 01:00:09 - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [After]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Before]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Between]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Cookie]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Header]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Host]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Method]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Path]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Query]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [ReadBody]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [RemoteAddr]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [Weight]
+2024-09-29 01:00:15 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-09-29 01:00:18 - Eureka HTTP Client uses RestTemplate.
+2024-09-29 01:00:18 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-29 01:00:19 - Setting initial instance status as: STARTING
+2024-09-29 01:00:19 - Initializing Eureka in region us-east-1
+2024-09-29 01:00:19 - Resolving eureka endpoints via configuration
+2024-09-29 01:00:19 - Disable delta property : false
+2024-09-29 01:00:19 - Single vip registry refresh property : null
+2024-09-29 01:00:19 - Force full registry fetch : false
+2024-09-29 01:00:19 - Application is null : false
+2024-09-29 01:00:19 - Registered Applications size is zero : true
+2024-09-29 01:00:19 - Application version is -1: true
+2024-09-29 01:00:19 - Getting all instance registry info from the eureka server
+2024-09-29 01:00:20 - The response status is 200
+2024-09-29 01:00:20 - Starting heartbeat executor: renew interval is: 30
+2024-09-29 01:00:20 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-29 01:00:20 - Discovery Client initialized at timestamp 1727582420984 with initial instances count: 0
+2024-09-29 01:00:21 - Registering application GATEWAY with eureka with status UP
+2024-09-29 01:00:21 - Saw local status change event StatusChangeEvent [timestamp=1727582421018, current=UP, previous=STARTING]
+2024-09-29 01:00:21 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082: registering service...
+2024-09-29 01:00:21 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - registration status: 204
+2024-09-29 01:00:21 - Netty started on port 8082 (http)
+2024-09-29 01:00:21 - Updating port to 8082
+2024-09-29 01:00:21 - Started GatewayApplication in 20.615 seconds (process running for 22.011)
+2024-09-29 01:00:50 - Disable delta property : false
+2024-09-29 01:00:50 - Single vip registry refresh property : null
+2024-09-29 01:00:50 - Force full registry fetch : false
+2024-09-29 01:00:50 - Application is null : false
+2024-09-29 01:00:50 - Registered Applications size is zero : true
+2024-09-29 01:00:50 - Application version is -1: false
+2024-09-29 01:00:50 - Getting all instance registry info from the eureka server
+2024-09-29 01:00:51 - The response status is 200
+2024-09-29 01:04:02 - Unregistering application GATEWAY with eureka with status DOWN
+2024-09-29 01:04:02 - Saw local status change event StatusChangeEvent [timestamp=1727582642860, current=DOWN, previous=UP]
+2024-09-29 01:04:02 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082: registering service...
+2024-09-29 01:04:02 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - registration status: 204
+2024-09-29 01:04:05 - Shutting down DiscoveryClient ...
+2024-09-29 01:04:08 - Unregistering ...
+2024-09-29 01:04:08 - DiscoveryClient_GATEWAY/LAPTOP-EJCRVOMS.mshome.net:gateway:8082 - deregister  status: 200
+2024-09-29 01:04:08 - Completed shut down of DiscoveryClient
